@@ -38,6 +38,7 @@ class GradientButton extends React.PureComponent {
       impact,
       impactStyle,
       onPressAction,
+      onLongPressAction,
       purpleViolet,
       violetPink,
       pinkDarkGreen,
@@ -45,6 +46,7 @@ class GradientButton extends React.PureComponent {
       blueMarine,
       deepBlue,
       disabled,
+      delayLongPress,
     } = this.props;
 
     const purpleVioletColor = ["#7B42F6", "#B01EFF"];
@@ -81,6 +83,12 @@ class GradientButton extends React.PureComponent {
             return onPressAction();
           }
         }}
+        onLongPress={disabled ? null : () => {
+          if (onLongPressAction) {
+            return onLongPressAction();
+          }
+        }}
+        delayLongPress={delayLongPress ? delayLongPress : 500}
       >
         <LinearGradient
           style={[styles.gradient, { borderRadius: radius }]}

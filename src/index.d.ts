@@ -19,6 +19,7 @@ export interface Props {
     impact: boolean,
     impactStyle: string,
     onPressAction: Function,
+    onLongPressAction: Function,
     purpleViolet: boolean,
     violetPink: boolean,
     pinkDarkGreen: boolean,
@@ -28,4 +29,5 @@ export interface Props {
     disabled: boolean,
     disabledGradientBegin: string,
     disabledGradientEnd: string,
+    delayLongPress: number,
 }

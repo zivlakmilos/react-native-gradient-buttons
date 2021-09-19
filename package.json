@@ -1,5 +1,5 @@
 {
-  "name": "react-native-gradient-buttons",
+  "name": "react-native-gradient-buttons-improved",
   "keywords": [
     "react-native",
     "gradient",
@@ -8,17 +8,17 @@
     "gradient-button",
     "gradient-buttons"
   ],
-  "homepage": "https://github.com/thomaswang/react-native-gradient-buttons",
-  "bugs": "https://github.com/thomaswang/react-native-gradient-buttons/issues",
+  "homepage": "https://github.com/zivlakmilos/react-native-gradient-buttons",
+  "bugs": "https://github.com/zivlakmilos/react-native-gradient-buttons/issues",
   "repository": {
-    "url": "https://github.com/thomaswang/react-native-gradient-buttons",
+    "url": "https://github.com/zivlakmilos/react-native-gradient-buttons",
     "type": "git"
   },
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "React Native gradient buttons for your next project",
   "main": "./src/index",
   "typings": "./src/index",
-  "author": "Thomas Wang <thomas@wang.sh>",
+  "author": "Thomas Wang <thomas@wang.sh>, Milos Zivlak <zivlakmilos@gmail.com",
   "license": "MIT",
   "scripts": {
     "build": "tsc"
