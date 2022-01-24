@@ -246,3 +246,5 @@ buck-out/
 
 
 # End of https://www.gitignore.io/api/code,reactnative
+
+.nvimlog

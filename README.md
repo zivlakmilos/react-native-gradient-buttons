@@ -1,12 +1,14 @@
-# React Native Gradient Buttons [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Gradient%20buttons%20in%20%40reactnative%20by%20%40thomaswang%20with%201%20line%20of%20code%21%20Instructions%20here%3A%20https%3A%2F%2Fgithub.com%2Fthomaswang%2Freact-native-gradient-buttons)
+# React Native Gradient Buttons [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Gradient%20buttons%20in%20%40reactnative%20by%20%40thomaswang%20with%201%20line%20of%20code%21%20Instructions%20here%3A%20https%3A%2F%2Fgithub.com%2Fzivlakmilos%2Freact-native-gradient-buttons-improved)
 
-[![Version](https://img.shields.io/npm/v/react-native-gradient-buttons)](https://www.npmjs.com/package/react-native-gradient-buttons)
+[![Version](https://img.shields.io/npm/v/react-native-gradient-buttons-improved)](https://www.npmjs.com/package/react-native-gradient-buttons-improved)
 [![Platform](https://img.shields.io/badge/platform-ios%2Fandroid-blue.svg)](https://facebook.github.io/react-native/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/thomaswang/react-native-gradient-buttons/blob/master/LICENSE)
 
 Lightweight, customizable and haptic Gradient Buttons for React Native.
 
 <img src="./Examples.png" alt="Examples" width="250">
+
+Supports press and long press actions.
 
 ## Requirements
 
@@ -19,14 +21,14 @@ For pure React Native projects you must install [react-native-unimodules](https:
 ```
 yarn add react-native-gradient-buttons
 # or
-npm install --save react-native-gradient-buttons
+npm install --save react-native-gradient-buttons-improved
 ```
 
 ## Usage
 
 ```
 # ES6 import
-import GradientButton from 'react-native-gradient-buttons';
+import GradientButton from 'react-native-gradient-buttons-improved';
 ```
 
 ## Props
@@ -65,6 +67,9 @@ import GradientButton from 'react-native-gradient-buttons';
   - default: `'Heavy'`
   - options: `'Heavy'`, `'Medium'`, `'Light'`
 - `onPressAction`: `Function`
+  - No default
+  - options: any function you want to pass to the Gradient Button
+- `onLongPressAction`: `Function`
   - No default
   - options: any function you want to pass to the Gradient Button
 - `disabled`: `Boolean`
@@ -116,6 +121,7 @@ import GradientButton from 'react-native-gradient-buttons';
       impact
       impactStyle='Light'
       onPressAction={() => alert('You pressed me!')}
+      onLongPressAction={() => alert('You long pressed me!')}
     >
       Gradient Button #2
     </GradientButton>
@@ -129,5 +135,3 @@ import GradientButton from 'react-native-gradient-buttons';
     <GradientButton text="Disabled" width='90%' disabled impact />
   </View>
 ```
-
-_For a more detailed example, see my example project_: [React Native Auth Screens](https://github.com/thomaswang/auth-screens).
